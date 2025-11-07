@@ -76,10 +76,10 @@ if (JINJA2CPP_BUILD_TESTS)
 endif()
 
 install (FILES
-        thirdparty/nonstd/expected-lite/include/nonstd/expected.hpp
-        thirdparty/nonstd/variant-lite/include/nonstd/variant.hpp
-        thirdparty/nonstd/optional-lite/include/nonstd/optional.hpp
-        thirdparty/nonstd/string-view-lite/include/nonstd/string_view.hpp
+        ${CMAKE_BINARY_DIR}/_deps/expected-lite-src/include/nonstd/expected.hpp
+        ${CMAKE_BINARY_DIR}/_deps/variant-lite-src/include/nonstd/variant.hpp
+        ${CMAKE_BINARY_DIR}/_deps/optional-lite-src/include/nonstd/optional.hpp
+        ${CMAKE_BINARY_DIR}/_deps/string-view-lite-src/include/nonstd/string_view.hpp
     DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/nonstd)
 
 install (TARGETS RapidJson
